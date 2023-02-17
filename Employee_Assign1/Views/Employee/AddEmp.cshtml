@@ -1,0 +1,32 @@
+﻿@model Employee_Assign1.Models.Employee
+@{
+
+}
+<h1>Add Employee</h1>
+<form method="post" action="AddEmp">
+    <div class="mb-3">
+        <label class="form-label">FirstName</label>
+        <input type="text" class="form-control" asp-for="firstname" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">lastName</label>
+        <input type="text" class="form-control" asp-for="lastname" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone</label>
+        <input type="number" class="form-control" asp-for="phone" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="emailaddress" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" asp-for="mailingaddress" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">EmployeeType</label>
+        <input type="text" class="form-control" asp-for="type" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

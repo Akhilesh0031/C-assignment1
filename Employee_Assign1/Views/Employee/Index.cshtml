@@ -1,0 +1,31 @@
+﻿@model List<Employee_Assign1.Models.Employee>
+@{
+}
+<h1>Employee Details</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>Phone</th>
+			<th>Email</th>
+			<th>Address</th>
+			<th>type</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var employee in Model)
+		{
+		<tr>
+				<td>@employee.id</td>
+				<td>@employee.firstname</td>
+				<td>@employee.lastname</td>
+				<td>@employee.phone</td>
+				<td>@employee.emailaddress</td>
+				<td>@employee.mailingaddress</td>
+				<td>@employee.type</td>
+		</tr>
+		}
+	</tbody>
+</table>
